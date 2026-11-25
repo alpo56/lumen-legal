@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminar cuenta y datos — Lumen</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --accent: #1d4ed8;
+      --card: #f9fafb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --fg: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #1f2937;
+        --accent: #60a5fa;
+        --card: #111827;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+      padding: 2rem 1rem 4rem;
+    }
+    main { max-width: 780px; margin: 0 auto; }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 { font-size: 1.9rem; margin: 0 0 0.4rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+    .meta { color: var(--muted); font-size: 0.92rem; margin: 0; }
+    .box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    a { color: var(--accent); }
+    nav { margin-top: 0.75rem; font-size: 0.92rem; }
+    nav a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Eliminación de cuenta y datos en Lumen</h1>
+      <p class="meta">Responsable: Albert Poyatos Manrubia · Contacto: apm6981@gmail.com</p>
+      <nav>
+        <a href="./privacy.html">Política de Privacidad</a>
+        <a href="./delete-account.html">Eliminar cuenta</a>
+        <a href="./terms.html">Términos de uso</a>
+      </nav>
+    </header>
+
+    <h2>Opción 1: Eliminación inmediata desde la app Lumen</h2>
+    <div class="box">
+      <ol style="margin:0; padding-left:1.25rem;">
+        <li>Abre la app <strong>Lumen</strong> en tu dispositivo Android con tu sesión iniciada.</li>
+        <li>Ve a <strong>Ajustes → Cuenta y sincronización</strong>.</li>
+        <li>Pulsa el enlace <em>"Si quieres borrar tu usuario de Lumen en la nube, y que borremos todos tus datos, clica aquí"</em>.</li>
+        <li>Revisa la pantalla informativa y confirma pulsando el botón de borrado definitivo.</li>
+      </ol>
+    </div>
+
+    <h2>Opción 2: Solicitud por correo electrónico (si ya desinstalaste la app)</h2>
+    <p>
+      Si ya no tienes acceso a la app, envía un correo a
+      <a href="mailto:apm6981@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20Lumen">apm6981@gmail.com</a>
+      con el asunto <strong>"Solicitud de eliminación de cuenta Lumen"</strong> desde la misma dirección de Google
+      con la que iniciaste sesión. Procesaremos el borrado completo en un plazo máximo de 7 días hábiles.
+    </p>
+
+    <h2>Qué datos se eliminan y cuáles se conservan</h2>
+    <ul>
+      <li>
+        <strong>Datos eliminados de forma permanente e irreversible:</strong> tu cuenta de usuario en Supabase Auth,
+        tu perfil (<code>user_profiles</code>: email, nombre, avatar y descuento asociado) y todo tu estado
+        sincronizado (<code>user_app_state</code>: temas, preferencias, fuentes bloqueadas y artículos guardados).
+      </li>
+      <li>
+        <strong>Suscripciones activas de Google Play:</strong> eliminar tu cuenta de Lumen no cancela automáticamente
+        una suscripción activa gestionada por Google Play. Si tienes una suscripción de pago activa, cancélala
+        desde <em>Google Play Store → Pagos y suscripciones</em>.
+      </li>
+      <li>
+        <strong>Datos locales:</strong> si solo quieres borrar los datos guardados en el teléfono sin eliminar tu
+        cuenta en la nube, usa el botón <em>"Borrar contenido de la app"</em> en Ajustes o desinstala la app.
+      </li>
+    </ul>
+  </main>
+</body>
+</html>

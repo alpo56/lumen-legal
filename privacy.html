@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Lumen</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --accent: #1d4ed8;
+      --card: #f9fafb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --fg: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #1f2937;
+        --accent: #60a5fa;
+        --card: #111827;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+      padding: 2rem 1rem 4rem;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 { font-size: 1.9rem; margin: 0 0 0.4rem; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; }
+    p, li { color: var(--fg); }
+    .meta { color: var(--muted); font-size: 0.92rem; margin: 0; }
+    .box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    a { color: var(--accent); }
+    nav { margin-top: 0.75rem; font-size: 0.92rem; }
+    nav a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Política de Privacidad de Lumen</h1>
+      <p class="meta">Última actualización: 25 de noviembre de 2026</p>
+      <nav>
+        <a href="./privacy.html">Privacidad</a>
+        <a href="./delete-account.html">Eliminar cuenta y datos</a>
+        <a href="./terms.html">Términos de uso</a>
+      </nav>
+    </header>
+
+    <p>
+      Esta Política de Privacidad explica cómo <strong>Lumen</strong> recopila, utiliza, almacena y protege
+      tus datos personales cuando utilizas la aplicación móvil Android, en cumplimiento del Reglamento General
+      de Protección de Datos (RGPD) y la normativa española aplicable.
+    </p>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <div class="box">
+      <p style="margin:0;">
+        <strong>Titular / Responsable:</strong> Albert Poyatos Manrubia<br />
+        <strong>País:</strong> España<br />
+        <strong>Correo electrónico de contacto y privacidad:</strong> <a href="mailto:apm6981@gmail.com">apm6981@gmail.com</a>
+      </p>
+    </div>
+
+    <h2>2. Qué datos recogemos</h2>
+    <p>Lumen recoge únicamente los datos estrictamente necesarios para ofrecerte el servicio:</p>
+    <ul>
+      <li>
+        <strong>Datos de cuenta (si inicias sesión con Google):</strong> dirección de correo electrónico,
+        nombre completo, identificador de usuario y URL de tu avatar/foto de perfil de Google.
+        <em>(Si utilizas la app sin iniciar sesión, estos datos de cuenta no se recopilan).</em>
+      </li>
+      <li>
+        <strong>Preferencias y contenido sincronizado en la nube:</strong> idioma de la interfaz y de noticias,
+        país, ubicaciones de interés, temas seguidos, gustos/descartes (<em>Me encanta</em>, <em>Me gusta</em>,
+        <em>No me gusta</em>), fuentes bloqueadas, ajustes de lectura/voz y artículos guardados.
+      </li>
+      <li>
+        <strong>Datos de suscripción y descuentos:</strong> estado de tu plan Premium, códigos de descuento
+        aplicados e identificadores/tokens de compra gestionados por Google Play Billing (nunca almacenamos
+        números de tarjeta ni datos bancarios).
+      </li>
+      <li>
+        <strong>Almacenamiento local en el dispositivo:</strong> artículos descargados en caché, resúmenes
+        generados y preferencias locales cifradas en tu dispositivo.
+      </li>
+    </ul>
+
+    <h2>3. Finalidad y base legal del tratamiento</h2>
+    <ul>
+      <li><strong>Prestación del servicio (ejecución del contrato):</strong> mostrar noticias personalizadas, generar resúmenes, sincronizar tus preferencias entre dispositivos y gestionar el acceso Premium o códigos promocionales.</li>
+      <li><strong>Autenticación y seguridad (interés legítimo / ejecución del servicio):</strong> verificar tu identidad mediante Google Sign-In y proteger tu cuenta mediante políticas de acceso por usuario (Row Level Security).</li>
+      <li><strong>Atención al usuario y cumplimiento legal:</strong> responder solicitudes enviadas a <a href="mailto:apm6981@gmail.com">apm6981@gmail.com</a> y cumplir obligaciones legales aplicables.</li>
+    </ul>
+    <p><strong>No vendemos tus datos personales</strong> ni los utilizamos para publicidad de terceros.</p>
+
+    <h2>4. Con quién se comparten los datos (encargados del tratamiento)</h2>
+    <p>Para que Lumen funcione, nos apoyamos únicamente en los siguientes proveedores tecnológicos:</p>
+    <ul>
+      <li>
+        <strong>Google LLC (Google Sign-In y Google Play Billing):</strong> para el inicio de sesión seguro
+        con tu cuenta de Google y para procesar y verificar las suscripciones de Lumen Premium.
+      </li>
+      <li>
+        <strong>Supabase Inc. (Base de datos, autenticación y proxy seguro):</strong> para almacenar de forma
+        cifrada tu perfil, tus preferencias sincronizadas, tus artículos guardados y tu estado de descuentos,
+        así como para enrutar las peticiones de IA de forma segura sin exponer claves en la aplicación.
+      </li>
+      <li>
+        <strong>Google Gemini API (Inteligencia Artificial):</strong> para generar resúmenes de noticias
+        y extraer temas editoriales de interés en el modo Premium. <strong>No enviamos tus datos personales
+        (como nombre, correo o identificador de cuenta) junto con el texto de las noticias</strong> a la API de IA.
+      </li>
+    </ul>
+
+    <h2>5. Seguridad y conservación de los datos</h2>
+    <ul>
+      <li>Todas las comunicaciones entre Lumen, Supabase y los servicios de Google viajan cifradas mediante <strong>HTTPS/TLS</strong>.</li>
+      <li>Los datos sincronizados se conservan mientras mantengas tu cuenta activa en Lumen.</li>
+      <li>Si utilizas Lumen sin cuenta en la nube, tus datos permanecen únicamente en tu dispositivo y se eliminan al usar la opción <em>Borrar contenido de la app</em> o al desinstalarla.</li>
+    </ul>
+
+    <h2>6. Tus derechos y eliminación de cuenta</h2>
+    <p>
+      De acuerdo con el RGPD, puedes ejercer tus derechos de <strong>acceso, rectificación, supresión (derecho al olvido),
+      limitación y portabilidad</strong> en cualquier momento.
+    </p>
+    <p>
+      <strong>Cómo eliminar tu cuenta y todos tus datos en la nube al instante:</strong>
+    </p>
+    <ol>
+      <li>Abre <strong>Lumen</strong> y entra en <strong>Ajustes → Cuenta y sincronización</strong>.</li>
+      <li>Pulsa en el enlace inferior: <em>"Si quieres borrar tu usuario de Lumen en la nube, y que borremos todos tus datos, clica aquí"</em>.</li>
+      <li>Confirma la eliminación permanente. Se borrarán inmediatamente tu usuario autenticado, tu perfil y todo tu estado sincronizado en Supabase.</li>
+    </ol>
+    <p>
+      También puedes consultar las instrucciones web en
+      <a href="./delete-account.html">Eliminar cuenta y datos</a> o escribir directamente a
+      <a href="mailto:apm6981@gmail.com">apm6981@gmail.com</a> desde tu correo registrado.
+    </p>
+
+    <h2>7. Menores de edad</h2>
+    <p>
+      Lumen no está dirigida a menores de 14 años ni recopila intencionadamente datos de menores.
+    </p>
+
+    <h2>8. Cambios en esta política</h2>
+    <p>
+      Podemos actualizar esta Política de Privacidad si incorporamos nuevas funciones o requisitos legales.
+      La fecha de actualización aparecerá siempre en la parte superior de esta página.
+    </p>
+  </main>
+</body>
+</html>
